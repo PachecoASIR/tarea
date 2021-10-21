@@ -1,17 +1,21 @@
-ping: apt-get update && apt-get install -y iputils-ping
-traceroute: apt-get install traceroute
-mtr: apt-get install mtr
-ifconfig: apt-get install net-tools
-ifup/ifdown: apt-get install ifupdown
-ip address: ip address show (ya estaba instalado)
-host: apt-get install host
-route: route -n (venía preinstalado)
-ifplugstatus: apt-get install ifplugd
-netstat: netstat (venía preinstalado)
-whois: apt-get install whois
-curl: apt-get install curl
-dig: apt-get install dnsutils
-Para editar resolv.conf para que el DNS cliente sea otro contenedor:
-nano /etc/resolv.conf
-Modificamos el nameserver con la IP del otro contenedor.
-Una vez hecho esto al hacer un dig la IP de SERVER ha de ser igual a IP de contenedor.
+Tarea: Docker Compose y Git
+
+1. En primer lugar vamos a crear una carpeta nueva y nos metemos dentro de ella desde Visual Code Studio.
+
+2. Creamos un documento dentro de dicha carpeta llamado docker-compose.yml
+
+3. Dentro de nuestro yml vamos a escribir nuestro código
+
+4. Una vez tenemos nuestro código, abrimos un terminal y escribimos “docker-compose up”, si todo está correcto se verá de la siguiente manera:
+
+5. Una vez hecho esto vamos a iniciar sesión en nuestro git por primera vez y vamos a crear nuestro repositorio:
+1. git init
+2. git add Readme.md
+3. git commit -m "first commit"
+4. git config --global user.name "Javier Ferradás"
+5. git config -g user.name "Javier Ferradás"
+6. git config --global user.email "jferradaspacheco@danielcastelao.org"
+7. git remote add origin https://github.com/PachecoASIR/contenedorDNS.git
+8. git remote -v
+9. git push -u origin master
+10. git pull origin master
