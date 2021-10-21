@@ -15,7 +15,7 @@ Tarea: Docker Compose y Git
 4. git config --global user.name "Javier Ferradás"
 5. git config -g user.name "Javier Ferradás"
 6. git config --global user.email "jferradaspacheco@danielcastelao.org"
-7. git remote add origin https://github.com/PachecoASIR/contenedorDNS.git
+7. git remote add origin https://github.com/PachecoASIR/tarea.git
 8. git remote -v
 9. git push -u origin master
 10. git pull origin master
